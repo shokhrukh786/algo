@@ -1,4 +1,4 @@
-package org.example.functional_interface_and_lambda.task3_Фильтры_Instagram;
+package org.example.functional_interface_and_lambda.task3_filters_Instagram;
 
 import java.util.function.Function;
 
@@ -13,3 +13,4 @@ public class FilterProcessor {
         return filter1.andThen(filter2);
     }
 }
+

@@ -1,8 +1,8 @@
-package org.example.functional_interface_and_lambda.task3_Фильтры_Instagram;
+package org.example.functional_interface_and_lambda.task3_filters_Instagram;
 
 public class Image {
-    private String name;
-    private String description;
+    private final String name;
+    private final String description;
 
     public Image(String name, String description) {
         this.name = name;
@@ -15,5 +15,10 @@ public class Image {
 
     public String getDescription() {
         return description;
+    }
+
+    @Override
+    public String toString() {
+        return "📷 " + name + " [" + description + "]";
     }
 }
